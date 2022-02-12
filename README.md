@@ -4,6 +4,7 @@
 
 # How to use
 Use the ~ducknews command to get a random duck fact anytime you want!
+
 Use ~ducksong for a suprise!
 
 Join the discord server here: [https://discord.gg/rAYu2Rjtcr](https://discord.gg/rAYu2Rjtcr)
