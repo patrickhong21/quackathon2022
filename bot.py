@@ -23,7 +23,7 @@ async def on_ready():
 
 @bot.command(aliases=['info'])
 async def help(ctx):
-  await ctx.send("Instructions \n ~ducknews - Get a random duck fact \n ~ducksong: Get link to duck song")
+    await ctx.send("Instructions \n ~ducknews - Get a random duck fact \n ~ducksong: Get link to duck song")
 
 
 @bot.command(name="ducknews")
