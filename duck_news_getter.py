@@ -10,7 +10,7 @@ def get_news() -> List[str]:
     news_results = scrape_news()
 
     rand_int = randint(0, len(news_results) - 1)
-    news_snippet = news_results[rand_int]["snippet"]
+    news_snippet = news_results[rand_int]["snippet"].replace("\n", "")
     news_url = news_results[rand_int]["link"]
 
     return [news_snippet, news_url]
