@@ -1,7 +1,7 @@
 from serpapi import GoogleSearch
 from random import randint
 from typing import List
-from tokens import get_api_token()
+from tokens import get_api_token
 
 
 def get_news() -> List[str]:

@@ -1,5 +1,5 @@
 # discord
-from tokens import get_discord_token()
+from tokens import get_discord_token
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands

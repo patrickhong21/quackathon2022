@@ -1,6 +1,6 @@
 from serpapi import GoogleSearch
 from random import randint
-from tokens import get_api_token()
+from tokens import get_api_token
 
 
 def get_link() -> str:
@@ -11,8 +11,6 @@ def get_link() -> str:
 
     rand_int = randint(0, len(images_results) - 1)
     image_link = images_results[rand_int]['original']
-
-    print(image_link)
 
     return image_link
 
