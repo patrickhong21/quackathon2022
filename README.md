@@ -3,3 +3,5 @@
 
 
 <h2> Use the ~ducknews command to get a random duck fact anytime you want! </h2>
+
+Join the discord server here: [https://discord.gg/rAYu2Rjtcr](https://discord.gg/rAYu2Rjtcr)
