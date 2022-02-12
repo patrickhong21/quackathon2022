@@ -1,6 +1,6 @@
 from serpapi import GoogleSearch
 from random import randint
-from tokens import get_api_token()
+from tokens import get_api_token
 
 
 def get_link() -> str:
