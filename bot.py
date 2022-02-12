@@ -1,4 +1,5 @@
 # discord
+from tokens import get_discord_token()
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
@@ -43,4 +44,4 @@ async def _ducknews(ctx):
     await ctx.send(embed=embed)
 
 
-bot.run("OTQyMTU5OTE5NDMwMzk3OTgy.YggczQ.sGdwsPAt7d6wgierBowfOwDOmdY")
+bot.run(get_discord_token())

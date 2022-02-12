@@ -1,5 +1,6 @@
 from serpapi import GoogleSearch
 from random import randint
+from tokens import get_api_token()
 
 
 def get_link() -> str:
@@ -24,7 +25,7 @@ def scrape_image() -> dict:
         "q": "Duck Animal",
         "tbm": "isch",
         "ijn": "0",
-        "api_key": "e191c33349d3ba314d5edd332fc577df540a383576e967f15a45f83a3d2be231"
+        "api_key": get_api_token()
     }
 
     search = GoogleSearch(params)

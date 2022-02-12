@@ -1,6 +1,7 @@
 from serpapi import GoogleSearch
 from random import randint
 from typing import List
+from tokens import get_api_token()
 
 
 def get_news() -> List[str]:
@@ -24,7 +25,7 @@ def scrape_news() -> dict:
     params = {
     "q": "duck animal",
     "tbm": "nws",
-    "api_key": "7babd63756f443d283ecd3fd67e39fe3af581203b500dec3e42b47ba6b1e2ca8"
+    "api_key": get_api_token()
     }
 
     search = GoogleSearch(params)
