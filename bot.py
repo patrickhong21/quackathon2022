@@ -23,7 +23,7 @@ async def on_ready():
 
 @bot.command(aliases=['info'])
 async def help(ctx):
-    await ctx.send("Instructions")
+    await ctx.send("Instructions \n ~ducknews - Get a random duck fact \n ~ducksong: Get link to duck song")
 
 
 @bot.command(name="ducknews")
@@ -47,6 +47,10 @@ async def _ducknews(ctx):
     await bot.change_presence(activity=discord.Game(name=f"Bot used {counter} times!"))
 
     await ctx.send(embed=embed)
+
+@bot.command(name="ducksong")
+async def _ducksong(ctx):
+    await ctx.send("https://www.youtube.com/watch?v=MtN1YnoL46Q")
 
 
 bot.run(get_discord_token())
