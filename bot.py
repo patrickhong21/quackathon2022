@@ -12,12 +12,13 @@ load_dotenv()
 
 bot = commands.Bot(command_prefix="~")
 bot.remove_command("help")
+counter = 0
 
 
 @bot.event
 async def on_ready():
     print('Bot ready')
-    await bot.change_presence(activity=discord.Game(name="~info for help"))
+    await bot.change_presence(activity=discord.Game(name=f"Bot used {counter} times!"))
 
 
 @bot.command(aliases=['info'])
@@ -40,6 +41,10 @@ async def _ducknews(ctx):
 
     embed.add_field(name='Source', value=news[1], inline=False)
     embed.set_image(url=pic)
+
+    global counter
+    counter += 1
+    await bot.change_presence(activity=discord.Game(name=f"Bot used {counter} times!"))
 
     await ctx.send(embed=embed)
 
