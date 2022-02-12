@@ -8,6 +8,7 @@ def get_news() -> List[str]:
     '''
     Produces a few sentences of news with url appended at the end.
     '''
+
     news_results = scrape_news()
 
     rand_int = randint(0, len(news_results) - 1)
@@ -21,7 +22,6 @@ def scrape_news() -> dict:
     '''
     Get JSON in dict format from API
     '''
-
     params = {
     "q": "duck animal",
     "tbm": "nws",
