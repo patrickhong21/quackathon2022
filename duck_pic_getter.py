@@ -16,7 +16,7 @@ def get_link() -> str:
     return image_link
 
 
-def scrape_image() -> str:
+def scrape_image() -> dict:
     '''
     Get JSON in dict format from API
     '''
