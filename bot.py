@@ -1,5 +1,5 @@
 # discord
-from tokens import get_discord_token()
+from tokens import get_discord_token
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
@@ -22,11 +22,12 @@ async def on_ready():
 
 @bot.command(aliases=['info'])
 async def help(ctx):
-    await ctx.send("Instructions")
+    await ctx.send("Instructions: \n~ducknews - for duck related news!")
 
 
 @bot.command(name="ducknews")
 async def _ducknews(ctx):
+
     news = get_news()
     pic = get_link()
     print(news)
@@ -35,7 +36,7 @@ async def _ducknews(ctx):
     embed = discord.Embed(
         title="Duck News!",
         description=news[0],
-        color=discord.Colour.blue()
+        color=discord.Colour.random()
     )
 
     embed.add_field(name='Source', value=news[1], inline=False)
