@@ -1,4 +1,4 @@
 def get_link() -> str:
     '''
-    Gives link of random duck pic
+    Gives link of random duck picture
     '''
