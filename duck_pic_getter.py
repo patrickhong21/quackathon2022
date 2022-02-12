@@ -12,8 +12,6 @@ def get_link() -> str:
     rand_int = randint(0, len(images_results) - 1)
     image_link = images_results[rand_int]['original']
 
-    print(image_link)
-
     return image_link
 
 
